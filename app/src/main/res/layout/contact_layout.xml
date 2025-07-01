@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/col_id"
+                android:layout_width="50sp"
+                android:layout_height="20sp"
+                android:layout_marginEnd="10sp"
+                android:textAlignment="center"
+                android:textColor="#0f0"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/col_name"
+                android:layout_width="150sp"
+                android:layout_height="20sp"
+                android:layout_marginEnd="10sp"/>
+
+            <TextView
+                android:id="@+id/col_contact_no"
+                android:layout_width="150sp"
+                android:layout_height="20sp"
+                android:layout_marginEnd="10sp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
