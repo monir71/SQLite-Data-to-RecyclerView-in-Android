@@ -1,5 +1,5 @@
 SQLite Custom Helper:
-
+```
 public class SQLiteDataModel extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "contactDB";
@@ -52,17 +52,17 @@ public class SQLiteDataModel extends SQLiteOpenHelper {
         return contactModels;
     }
 }
-
+```
 Data Model:
-
+```
 public class ContactModel {
     int id;
     String name;
     String contact_no;
 }
-
+```
 RecyclerView Custom Data Adapter:
-
+```
 public class RecyclerContactAdapter extends RecyclerView.Adapter<RecyclerContactAdapter.ViewHolder> {
     Context context;
     ArrayList<ContactModel> contactList;
@@ -102,16 +102,16 @@ public class RecyclerContactAdapter extends RecyclerView.Adapter<RecyclerContact
         }
     }
 }
-
+```
 RecyclerView Layout:
-
+```
         <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recyclerView"/>
-
+```
 Data View Layout:
-
+```
         <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -139,9 +139,9 @@ Data View Layout:
                 android:layout_marginEnd="10sp"/>
 
     </LinearLayout>
-
+```
 MainActivity.java
-
+```
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -205,4 +205,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-
+```
